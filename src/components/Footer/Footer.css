@@ -1,0 +1,11 @@
+footer {
+    color: var(--clr-gray);
+    padding: 2rem;
+    
+    h5 {
+     text-align: center;
+     margin: auto;
+     opacity: .8;
+    }
+
+}

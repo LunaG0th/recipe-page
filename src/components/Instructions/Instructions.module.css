@@ -1,0 +1,80 @@
+/* 
+Main
+  */
+
+.instructions__row {
+    background: white;
+}
+.instructions__col {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    gap: 1rem;
+    padding: 2rem;
+
+    h2 {
+        font-size: var(--size-3xl);
+        color: var(--clr-brown);
+        margin-top: .5rem;
+      }
+
+      ul li {
+        list-style:decimal ;
+        margin-inline: 1rem;
+        padding-block: .5rem;
+        line-height: 1.5;
+      }
+      
+      hr {
+        opacity: .5;
+        margin-bottom: 5px;
+      }
+
+      span {
+        margin-inline: 5px;
+        font-weight: 600;
+      }
+    
+}
+
+/* =======================
+    media queries
+======================= */
+
+/* xs */
+/* @media (width >= 475px) { } */
+
+/* sm */
+/* @media (width >= 640px) { } */
+
+/* md */
+@media (width >= 768px) { 
+    .instructions__row {
+        max-width: 24em;
+        background: white;
+        /* border-radius: .6rem .6rem 0rem 0rem; */
+        /* margin-block: 5rem; */
+        margin-inline: auto;
+      }
+
+      .instructions__col {
+        padding-block: 0;
+      }
+}
+
+/* lg */
+@media (width >= 1024px) { 
+    .instructions__row {
+        max-width: 36em;
+    }
+}
+
+/* xl */
+@media (width >= 1280px) { 
+    .instructions__row {
+        max-width: 40em;
+    }
+}
+
+/* 2xl */
+/* @media (width >= 1536px) { } */
